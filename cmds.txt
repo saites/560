@@ -1,0 +1,144 @@
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1000
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
+inquire 1001
+inquire 1002
+deposit 1001 100
+inquire 1001
+withdraw 1001 100
+this command will fail
+inquire 1001
+transfer 1001 1002 20
