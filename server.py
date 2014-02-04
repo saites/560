@@ -17,7 +17,20 @@ def inquire(acnt):
         return amt
     except KeyError:
         return None
-        
+
+def transfer(acnt1, acnt2, amt):
+    accnts = get_accounts()
+    try:
+        accnts[acnt1] -= amt
+    except KeyError:
+        return (False, False)
+    try:
+        accnts[acnt2] += amt
+    except KeyError:
+        return(True, False)
+    write_accounts(accnts)
+    return True, True
+
 def change_val(acnt, amt):
     accnts = get_accounts()
     try:
@@ -69,6 +82,7 @@ def main():
     server.register_function(deposit)
     server.register_function(withdraw)
     server.register_function(inquire)
+    server.register_function(transfer)
     server.serve_forever()
     
 main()

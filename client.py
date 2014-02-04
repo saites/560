@@ -31,14 +31,16 @@ def inquire(acnt):
         
 def transfer(acnt1, acnt2, amt):
     global server
-    if not server.withdraw(acnt1, amt):
+    if amt < 0:
+        print("Amount should be positive")
+        return
+    ans = server.transfer(acnt1, acnt2, amt)
+    if ans[0] is False:
         print("No such user or account, {}!".format(acnt1))
-        return
-    if not server.deposit(acnt2, amt):
-        server.deposit(acnt1, amt)
+    elif ans[1] is False: 
         print("No such user or account, {}!".format(acnt2))
-        return
-    print("Successfully transferred ${} from {} to {}!"
+    else:
+        print("Successfully transferred ${} from {} to {}!"
             .format(amt, acnt1, acnt2))
         
 def parsecmd(cmd):
@@ -74,12 +76,17 @@ class TimeoutTransport(xmlrpclib.Transport):
         h = httplib.HTTPConnection(host, timeout=self.timeout)
         return h      
 
+class ServerConnection():
+    def __init__(self, address_port):
+        (self.address, self.port_num) = address_port.split(':')
+        self.server = xmlrpclib.ServerProxy(
+            'http://'+self.address+':'+self.port_num,
+            transport=TimeoutTransport())
+        
 def main():
     global server
     try:
-        (address, port_num) = sys.argv[1].split(':')
-        server = xmlrpclib.ServerProxy('http://'+address+':'+port_num,
-            transport=TimeoutTransport())
+        server = ServerConnection(sys.argv[1]).server
         if len(sys.argv) == 3:
             parsefile(sys.argv[2])
         elif not parsecmd(sys.argv[2:]):
