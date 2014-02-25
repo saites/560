@@ -1,144 +1,36 @@
 inquire 1000
+inquire 1001
+inquire 1002
+inquire 1003
+inquire 1004
+inquire 1005
 inquire 1000
 inquire 1000
 inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1000
-inquire 1001
-inquire 1002
+inquire 1006
+inquire 1007
+inquire 1008
+inquire 1009
+inquire 1010
+inquire 37
 deposit 1001 100
+deposit 28 100
+deposit 1001 -100
 inquire 1001
 withdraw 1001 100
 this command will fail
 inquire 1001
 transfer 1001 1002 20
+transfer 1002 1001 20
 inquire 1001
 inquire 1002
 deposit 1001 100
-inquire 1001
 withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
-inquire 1001
-inquire 1002
-deposit 1001 100
-inquire 1001
-withdraw 1001 100
-this command will fail
-inquire 1001
-transfer 1001 1002 20
+deposit 1001 -10
+deposit 37 100 
+withdraw 1001 -10 
+withdraw 37 100 
+inquire 38 
+transfer 1001 1002 -10 
+transfer 37 1001 100 
+transfer 1001 37 100 

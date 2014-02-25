@@ -1,0 +1,36 @@
+The current balance of user 1000 is $1000
+The current balance of user 1001 is $2000
+The current balance of user 1002 is $3000
+The current balance of user 1003 is $4000
+The current balance of user 1004 is $5000
+The current balance of user 1005 is $6000
+The current balance of user 1000 is $1000
+The current balance of user 1000 is $1000
+The current balance of user 1000 is $1000
+The current balance of user 1006 is $7000
+The current balance of user 1007 is $8000
+The current balance of user 1008 is $9000
+The current balance of user 1009 is $10000
+The current balance of user 1010 is $0
+No such user or account, 37!
+Successfully deposit $100 to account 1001!
+No such user or account, 28!
+Amount should be positive
+The current balance of user 1001 is $2100
+Successfully withdraw $100 from account 1001!
+unknown command 'this command will fail'
+The current balance of user 1001 is $2000
+Successfully transferred $20 from 1001 to 1002!
+Successfully transferred $20 from 1002 to 1001!
+The current balance of user 1001 is $2000
+The current balance of user 1002 is $3000
+Successfully deposit $100 to account 1001!
+Successfully withdraw $100 from account 1001!
+Amount should be positive
+No such user or account, 37!
+Amount should be positive
+No such user or account, 37!
+No such user or account, 38!
+Amount should be positive
+No such user or account, 37!
+No such user or account, 37!

@@ -99,14 +99,16 @@ def main():
         print("       deposit 1000 100")
         print("       withdraw 1000 100")
         print("       inquire 1000")
-        print("       transfer 1000 1001 100 [from 1000 to 1001]")
+        print("       transfer 1000 1001 100 (from 1000 to 1001)")
     except socket.error as e:
         print e
         print("Unable to establish connection. Try checking the port number")
-    except (xmlrpclib.Fault, xmlrpclib.ProtocolError):
+    except (xmlrpclib.Fault, xmlrpclib.ProtocolError) as e:
+        print e
         print("Unable to establish connection. Try checking the server address")
         print("or network connection")
     except Exception as e:
         print("Unknown error: ", e)
         
-main()
+if __name__ == '__main__':
+    main()

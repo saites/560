@@ -74,7 +74,8 @@ def main():
         server = SimpleXMLRPCServer(
             (gethostname()+".eecs.utk.edu", port_num),
             allow_none=True)
-    except:
+    except Exception as e:
+        print e
         print("unable to create server")
         exit()
         
