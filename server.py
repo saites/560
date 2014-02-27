@@ -29,7 +29,7 @@ def transfer(acnt1, acnt2, amt):
     except KeyError:
         return(True, False)
     write_accounts(accnts)
-    return True, True
+    return (True, True)
 
 def change_val(acnt, amt):
     accnts = get_accounts()
