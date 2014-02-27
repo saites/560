@@ -12,6 +12,7 @@ accounts.txt    the accounts "database"
 client.py       the client program
 cmds.txt        a list of commands to test client
 correcttext.txt the correct output from cmds.txt
+design.txt		a document explaining relevant design choices
 server.py       the server program
 test.py         a program that will test the client/server
 

@@ -1,0 +1,20 @@
+Overview:
+This program works pretty simply: A server is started on a host machine, which uses python's RPC library to simply announce available functions which can be called. When a client connects and executes a function, the server loads the account database, finds the desired account (if it exists), and executes the operation, returning it success status. The client works just as simply; it connects to the host machine, calls the function desired by the user, and waits for the result, which it then interprets for the user.
+
+Language Choice:
+We chose to use python for this project because it is a simple language to understand and reason about, and it provides simple RPC libraries that are still fully functional. Although python doesn't have the speed of C or Java, we find that our program doesn't need it. We're not doing heavy-duty computation. Thus, python offered the highest level of programming ease without sacrificing our ability to complete the project.
+
+Database Choice:
+We use a very simple database concept. The accounts are stored in a text file as ordered pairs of account names and numbers. When the server executes a command, it loads the file into memory, finds the appropriate account, executes the operation, and writes the file back out. While this may seem inefficient, we have few accounts, so it is more than fast enough. Furthermore, it ensures that if the server reports that it successfully issued a command, the database will reflect that fact. Finally, the abstraction of get_accounts() and write_accounts(accnts) makes it easy to change these functions in the future to a more suitable database design, should the need arise, without any major changes to the code.
+
+Security:
+No attempt at security has been made, although in reality, such a system would require it. We chose not to implement any security features since doing so would unnecessarily complicate the assignment while moving away from the actual learning objective of the project. Despite this, our abstractions allow security to be implemented both on the server-side and client-side.
+
+Transport:
+We have subclassed the xmlrpclib transport protocol and forced it to use a timeout via HTTPConnection. While "standard" RPC does not provide a timeout mechanism, this allows us to issue exceptions if execution time has taken too long.
+
+Transfer:
+Although transfers could be implemented by the client using the server's deposit and withdraw functions, we decided to implement a server-side transfer function. If this were not the case, the client could issue the withdraw from one account, and the server could go down before the deposit could be issued to the other account (or vice versa). In this way, the server executes the transfer atomically.
+
+Improvements:
+As stated earlier, the program could be improved by providing a better database design and better security. In particular, the server could have a specific object that represents the database connection. get_accounts would still return a pointer to a dictionary, but the dictionary would not be reconstructed for each call. Along the same lines, write_accounts could buffer the dictionary writes to provide more efficient service. As another alternative, the database object could instead overload the get_item operators so that actual database commands are issued, allowing a full DBMS service to handle database transactions without the involvement of redundant python data structures. In addition, this data structure could provide security protections on the database, as well as ensuring that concurrent request are handled appropriately (by managing the requisite mutex structures).
